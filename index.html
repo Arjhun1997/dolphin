@@ -268,7 +268,7 @@ function init() {
 	
   root.scene.add(slide2);
   
-  var slide3 = new Slide(width, height, 'out');
+  var slide3 = new Slide(width, height, 'in');
   var l3 = new THREE.ImageLoader();
 	l3.setCrossOrigin('Anonymous');
 	l3.load('imgs/school-belt-var1.jpg', function(img) {
@@ -290,8 +290,8 @@ function init() {
 
   tl.add(slide.transition(), 0);
   tl.add(slide2.transition(), 0);
-  t1.add(slide3.transition(),0);
-  t1.add(slide4.transition(),0);
+  t1.add(slide3.transition(), 0);
+  t1.add(slide4.transition(), 0);
 
   createTweenScrubber(tl);
 
