@@ -259,7 +259,7 @@ function init() {
 	})
   root.scene.add(slide);
 
-  var slide2 = new Slide(width, height, 'out');
+  var slide2 = new Slide(width, height, 'in');
   var l2 = new THREE.ImageLoader();
 	l2.setCrossOrigin('Anonymous');
 	l2.load('imgs/school-belt-var.jpg', function(img) {
@@ -277,7 +277,7 @@ function init() {
 	
   root.scene.add(slide3);
   
-  var slide4 = new Slide(width, height, 'in');
+  var slide4 = new Slide(width, height, 'out');
   var l4 = new THREE.ImageLoader();
 	l4.setCrossOrigin('Anonymous');
 	l4.load('imgs/belt1.jpg', function(img) {
